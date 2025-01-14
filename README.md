@@ -8,6 +8,8 @@ This is a part of [Node3D](https://github.com/node-3d) project.
 npm i -s qml-colorhelpers-raub
 ```
 
+![Example](examples/screenshot.png)
+
 Simple HSV-oriented color pickers and colored rectangles for QML. The data flow is similar
 to React: app.color -> picker.color -> picker.signal -> app.update -> app.color. That is,
 unless the app accepts the color change, the picker.color will remain the same, and
