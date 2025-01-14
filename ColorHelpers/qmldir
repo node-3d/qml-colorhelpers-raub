@@ -1,0 +1,12 @@
+module ColorHelpers
+
+import QtQuick
+
+ColorRect 1.0 ColorRect.qml
+ColorRectHue 1.0 ColorRectHue.qml
+ColorRectSatVal 1.0 ColorRectSatVal.qml
+MouseRect 1.0 MouseRect.qml
+Crosshair 1.0 Crosshair.qml
+PickerHue 1.0 PickerHue.qml
+PickerSatVal 1.0 PickerSatVal.qml
+PickerHsv 1.0 PickerHsv.qml
