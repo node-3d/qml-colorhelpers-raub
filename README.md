@@ -13,7 +13,10 @@ to React: app.color -> picker.color -> picker.signal -> app.update -> app.color.
 unless the app accepts the color change, the picker.color will remain the same, and
 will not override the input.
 
-`PickerHsv` - combines `PickerSatVal` and `PickerHue`. The pickers will occupy the whole
+
+### PickerHsv
+
+Combines `PickerSatVal` and `PickerHue`. The pickers will occupy the whole
 item area. Use `widthHue` and `widthGap` to control how the area is distributed.
 
 ```js
@@ -32,7 +35,10 @@ PickerHsv {
 }
 ```
 
-`PickerHue` - a vertical box to select color hue. The picker fills the whole item area.
+
+### PickerHue
+
+A vertical box to select color hue. The picker fills the whole item area.
 
 ```js
 PickerHue {
@@ -50,7 +56,10 @@ PickerHue {
 }
 ```
 
-`PickerHue` - a gradient box to select color saturation and value.
+
+### PickerHue
+
+A gradient box to select color saturation and value.
 The picker fills the whole item area.
 
 ```js
@@ -69,7 +78,10 @@ PickerSatVal {
 }
 ```
 
-`ColorRect` - convenient gradient Rectangle where you only need to provide the list of colors.
+
+### ColorRect
+
+Convenient gradient Rectangle where you only need to provide the list of colors.
 The colors will spread uniformly across the area.
 
 ```js
@@ -79,9 +91,15 @@ ColorRect {
 }
 ```
 
-`ColorRectHue` - same as `ColorRect`, but prebuilt with hue color list.
 
-`ColorRectSatVal` - runs 2 overlayed `ColorRect` items to emulate saturation-value
+### ColorRectHue
+
+Same as `ColorRect`, but prebuilt with hue color list.
+
+
+### ColorRectSatVal
+
+Runs 2 overlayed `ColorRect` items to emulate saturation-value
 color variations. Provide a hue value to set the base color.
 
 ```js
@@ -90,7 +108,10 @@ ColorRectSatVal {
 }
 ```
 
-`Crosshair` - visual handle to show the current value on color pickers. It receives
+
+### Crosshair
+
+Visual handle to show the current value on color pickers. It receives
 the position coordinates `u, v` in percent, and positions to fit its center over that spot.
 
 ```js
@@ -103,7 +124,10 @@ Crosshair {
 }
 ```
 
-`CrosshairRect` - a small helper to draw "outlined" rectangles for crosshairs.
+
+### CrosshairRect
+
+A small helper to draw "outlined" rectangles for crosshairs.
 
 ```js
 CrosshairRect {
@@ -114,7 +138,9 @@ CrosshairRect {
 }
 ```
 
-`MouseRect` - a `u, v` oriented mouse area. Meaning it will report coordinates in percents,
+### MouseRect
+
+A `u, v` oriented mouse area. Meaning it will report coordinates in percents,
 ranging from `0.0` to `1.0`. Good for sliders and 2D sliders (as in color pickers).
 Has optional margins, because slider knobs usually can go past the selection area, and
 should still seem interactive.
