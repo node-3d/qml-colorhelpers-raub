@@ -17,9 +17,9 @@ const {
 addThreeHelpers(three, gl);
 
 const { QmlOverlay, loop, View } = initQml({ doc, gl, cwd: process.cwd(), three });
-View.libs('..');
+View.libs('..'); // i.e. "examples/.." - the root of this repo, where the lib is located
 
-const icon = new Img('qml.png'); // use `npm run gui` from "examples", so CWD is there
+const icon = new Img('qml.png'); // use `npm start` from "examples", so CWD is there
 icon.on('load', () => { doc.icon = (icon as unknown as typeof doc.icon); });
 
 const screen = new Screen({ three });
